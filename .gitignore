@@ -1,0 +1,19 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temp and backup files
+~$*.docx
+*.tmp
+*.log
