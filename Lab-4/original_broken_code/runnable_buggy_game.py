@@ -20,8 +20,10 @@ FPS = 60
 WHITE = (255, 255, 255)
 DARK_BLUE = (20, 25, 45)
 BOMB_BLACK = (30, 30, 30)
-FRUIT_COLORS = [(220, 60, 60), (230, 140, 40), (230, 200, 40), (90, 180, 90)]
-font = pygame.font.SysFont("Arial", 28)
+try:
+    font = pygame.font.SysFont("Arial", 28)
+except Exception:
+    font = pygame.font.Font(None, 28)
 
 class NaiveFruit:
     def __init__(self, x, y, vx, vy, gravity, radius=28, kind="fruit"):
